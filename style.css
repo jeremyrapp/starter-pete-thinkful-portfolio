@@ -16,9 +16,28 @@ h3 {
   text-align: center;
 }
 
-/* Header */
+/* Header Styling */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0 20px;        
+}
+
+header h1 {
+  margin: 0;
+  margin-right: 35px; 
+  text-align: left; 
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  padding-left: 20px;
 }
 
 /* Containers */
@@ -37,6 +56,21 @@ article div {
   width: 100%;
 }
 
+/* Portfolio Div Styling */
+.portfolio-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#portfolio p {
+  font-size: 14px;
+}
+
+.portfolio-row section {
+  margin: 0 15px;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
@@ -51,20 +85,19 @@ a:hover {
   color: #f77f00;
 }
 
-nav a {
-  padding-left: 20px;
-}
-
 /* Images */
 img {
-  width: 100%;
-  max-width: 200px;
+  max-width: 170px;
   height: auto;
 }
 
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+}
+
+.pete-image-container img {
+  max-width: 200px; 
 }
 
 /* Footer */
@@ -75,4 +108,23 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+/* Flex container elements styling */
+.intro-container {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+}
+
+.intro-text h3 {
+  text-align: center;
+}
+
+.intro-text p {
+  text-align: left;
+}
+
+li {
+  text-align: left;
 }
